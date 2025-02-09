@@ -122,3 +122,22 @@ Feel free to fork this repo, raise issues, and submit pull requests! 🎉
 
 ## 📝 **License**  
 This project is licensed under the MIT License.  
+
+----------------------------------
+
+1️⃣ How to Connect to H2 Database?
+Since you have configured H2 in-memory mode, follow these steps to access it:
+
+🔹 A) Access via H2 Console (Web UI)
+Run your Spring Boot application.
+Open browser and go to:
+bash
+Copy
+Edit
+http://localhost:8080/h2-console
+Enter the following details (as per your application.yml config):
+JDBC URL: jdbc:h2:mem:ecomdb
+Username: sa
+Password: password
+Driver Class: org.h2.Driver
+Click "Connect", and you’ll see the database UI where you can execute SQL queries.
